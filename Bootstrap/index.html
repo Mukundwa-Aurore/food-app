@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <style>
+    .main-bg {
+      background-image: url('Images/background.png');
+      background-size: cover;
+      background-position: center;
+      height: 95vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .category-img {
+      margin-bottom: 20px;
+    }
+
+    #do {
+      transform: translate(80px, -55px);
+      display: flex;
+      float: right;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+ 
+      
+    }
+
+    #under {
+      margin-left: 2%;
+      border-bottom:black 2px solid ;
+      width: 22%;
+    }
+
+
+  
+
+
+.navbar-collapse {
+    position: fixed;
+    top: 56px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease;
+}
+.navbar-collapse.show {
+    left: 0;
+}
+.navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.nav-item {
+    margin-bottom: 10px;
+}
+
+
+.text-xxl {
+    font-size: 2.5rem;
+}
+
+
+.btn-lg {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+
+.main-bg {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+#do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#under {
+    border-bottom: black 2px solid;
+    width: 22%;
+}
+
+@media (max-width: 768px) {
+  
+    .navbar-collapse {
+        top: 0;
+        height: auto;
+        background-color: transparent;
+        position: relative;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .nav-item {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+    .text-xxl {
+        font-size: 2rem;
+    }
+    
+    .btn-lg {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+    
+    #do {
+        transform: none;
+    }
+    #under {
+        margin-left: 0;
+        width: auto;
+    }
+}
+
+    
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary container-fluid">
+    <div class="container-fluid">
+      <a class="navbar-brand text-xxl text-white" href="#">NUTRITIOUS</a>
+
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-lg-0 ms-5">
+          <li class="nav-item">
+            <a class="nav-link active text me-5 ms-5" style="color: rgb(255, 0, 55);" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text text-white me-5" href="ContactUs.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text text-white me-5" href="tips.html">Tips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text text-white me-5" href="about.html">About</a>
+          </li>
+        </ul>
+        <form class="d-flex me-5" role="search">
+          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-white bg-white text text-secondary" type="submit">ENTER</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+  <section class="main-bg">
+    <div class="overlay">
+      <div class="mt-5">
+        <p>.</p>
+      </div>
+      <div class="mt-5 col-sm-4 text text-xxl text-dark">
+        <p>.</p>
+      </div>
+      <div class="mt-5 text-dark">.</div>
+      <h2 class="text text-xxl text-white mt-5">MIX THE RIGHT AMOUNT OF NUTRIENTS <br> MAKE LIFE BETTER AND LONGER</h2>
+      <button class="btn btn-outline-light text btn-lg mt-5 mb-5">More About Nutrition</button>
+    </div>
+  </section>
+
+
+
+  <section class="col-12" id="do">
+
+    <div class=" text-sm font-light text-center   " id="do">
+      <div class=" border rounded border-danger " id="under">
+        <h5 class="text-danger ">BODY BUILDING</h5>
+        <p class="text-secondary">Foods high in protein, such as chicken, fish, and legumes, support muscle growth
+          and repair, essential for bodybuilding.</p>
+      </div>
+      <div class=" border rounded border-danger  " id="under">
+        <h5 class="text-danger font-medium ">ENERGY GIVING</h5>
+        <p class="text-secondary">Carbohydrate-rich foods like whole grains, fruits, and sweet potatoes provide
+          sustained energy for workouts and daily activities.</p>
+      </div>
+      <div class=" border border-danger rounded " id="under">
+        <h5 class="text-danger  ">BODY PROTECTIVE</h5>
+        <p class="text-secondary">Antioxidant-rich foods such as berries, nuts, and green leafy vegetables help
+          protect the body from oxidative stress and support overall health.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="container ">
+    <h4 class="text text-center mt-2 text-secondary">CATEGORIES OF BALANCED NUTRITION</h4>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-3 category-img">
+        <figure class="text-center">
+          <img src="Images/sweet-potato.png" alt="" height="100px">
+          <figcaption class="text text-sm">Energy Giving Food</figcaption>
+        </figure>
+      </div>
+      <div class="col-3 category-img">
+        <figure class="text-center">
+          <img src="Images/chicken.png" alt="" height="100px">
+          <figcaption class="text text-sm">Body Building Food</figcaption>
+        </figure>
+      </div>
+      <div class="col-3 category-img">
+        <figure class="text-center">
+          <img src="Images/fruits.png" alt="" height="100px">
+          <figcaption class="text text-sm">Body Protective Food</figcaption>
+        </figure>
+      </div>
+      <div class="col-3 category-img">
+        <figure class="text-center">
+          <img src="Images/water.png" alt="" height="100px">
+          <figcaption class="text text-sm">Water</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="container mt-5 mb-5">
+
+
+
+
+
+    <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active text-dark" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+          type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Body Building Food</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text text-secondary" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+          aria-selected="false">Energy Giving Food</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link text text-secondary" id="contact-tab" data-bs-toggle="tab"
+          data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+          aria-selected="false">Body Protective Food</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active " id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+        tabindex="0">
+
+        <div class="row ">
+          <h5 class="text text-center text-secondary mt-3 mb-2 ">
+            BODY PROTECTIVE FOOD
+          </h5>
+          <div class="card ms-5 mb-5" style="width: 18rem;">
+            <img src="Images/rice.jpeg" class="card-img-top img-fluid alt=" ...">
+            <div class="card-body">
+              <h5 class="card-title">Rice</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+
+
+          <div class="card ms-3 mb-5 " style="width: 18rem;">
+            <img src="Images/images.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sweet Potatoes</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+
+          <div class="card ms-3 mb-5" style="width: 18rem;">
+            <img src="Images/beans.jpeg" class="card-img-top img-fluid alt=" ...">
+            <div class="card-body">
+              <h5 class="card-title">Beans</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+          <div class="card ms-5 " style="width: 18rem;">
+            <img src="Images/potatoes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Irish Potatoes</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+          <div class="card ms-3" style="width: 18rem;">
+            <img src="Images/cassava.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cassava</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="card ms-3" style="width: 18rem;">
+            <img src="Images/yams.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yams</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+          <div class="col-6 align-items-center mt-3 ms-5">
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+
+
+
+
+
+        <div class="row">
+          <h5 class="text text-center text-secondary mt-3 mb-2 ">
+            BODY BUILDING FOOD
+          </h5>
+          <div class="card ms-5" style="width: 18rem;  ">
+            <img src="Images/chicken.jpg" class="card-img-top" height="" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Meat</h5>
+              <a href="#" class="btn  text  text-sm btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+          <div class="card ms-3" style="width: 18rem;">
+            <img src="Images/fish.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fish</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+
+          <div class="card ms-3" style="width: 18rem; ">
+            <img src="Images/milk.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Milk</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+          <div class="col-6 align-items-center mt-3 ms-5">
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+      </div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+
+
+
+
+        <div class="row">
+          <h5 class="text text-center text-secondary mt-3 mb-2 ">
+            ENERGY GIVING FOOD
+          </h5>
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="Images/rice.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rice</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="card ms-3" style="width: 18rem;">
+            <img src="Images/cassava.jpeg " class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cassava</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+
+
+          <div class="card ms-3" style="width: 18rem;">
+            <img src="Images/yams.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Yams</h5>
+              <a href="#" class="btn  btn-sm btn-outline-secondary">MORE INFO</a>
+            </div>
+          </div>
+          <div class="col-6 align-items-center mt-3 ms-5">
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+  <section class="container-fluid d-flex mt-5 mb-5 bg-light ">
+
+
+    <div class="col-4">
+      <H1 class="text text-center mt-4 " style="color: rgb(82, 27, 27);">Did You Know?</H1>
+      <p class="text  text-align-justify  ms-5 mt-4 text-dark">Did you know that water is essential for our overall
+        health and wellbeing? Water makes up about 60%
+        of our body weight, and drinking enough of it can
+        provide a variety of benefits. Proper hydration can
+        boost metabolism, aid in weight management,
+        and flush out toxins and bacteria from the body.
+        Dehydration, on the other hand, can lead to fatigue,
+        headaches, and impaired cognitive function. The
+        recommended daily water intake is around <span class="text text-secondary">11.5 cups</span>
+        (2.7 liters) for women and 15.5 cups
+        <span class="text text-secondary">(3.7 liters)</span> for men.
+        Staying well-hydrated by drinking enough water throughout
+        the day is an important part of maintaining a healthy, balanced lifestyle.
+      </p>
+    </div>
+    <div class="col-6">
+      <img src="Images/happy-removebg-preview.png" class="img-fluid " alt="">
+
+    </div>
+  </section>
+
+
+
+
+
+  <div class="container section-title d-flex mt-5">
+  </div>
+  </span>
+
+  <div class="container " data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+          data-aos-delay="200">
+          <i class="bi bi-geo-alt"></i>
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+          data-aos-delay="300">
+          <i class="bi bi-telephone"></i>
+          <h3>Call Us</h3>
+          <p>+0788345673</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+          data-aos-delay="400">
+          <i class="bi bi-envelope"></i>
+          <h3>Email Us</h3>
+          <p>nutritious@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row gy-4 mt-1 d-flex">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <img src="Images/contact us.jpeg" class="img-fluid" e alt="">
+
+      </div>
+
+      <div class="col-lg-6">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Balanced Nutrition</div>
+              <div class="sent-message">Meet with Experts</div>
+
+              <button class="btn btn-outline-secondary mt-3 mb-5" type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+      <footer class="container-fluid  bg-light text-white pt-5 pb-4">
+        <h4 class="text text-center text-dark">NUTRITIOUS</h4>
+        <p class="text text-secondary align-items-center text-center">Prepare a balanced diet, All at your finger tips
+        </p>
+
+
+      </footer>
+      <div class="container-fluid text-center bg-light text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">WHAT WE DO</h5>
+            <p>Mix the right amount of nutrients make your health better</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">HIGHLIGHTS</h5>
+            <p>Body-Building</p>
+            <p>Energy-Giving</p>
+            <p>Body-protective</p>
+            <p>Water</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">AIMS FOR THIS</h5>
+            <p>Tips</p>
+            <p>Education</p>
+            <p>Adivises</p>
+            <p>Good Life</p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Contact Us</h5>
+            <p><i class="mr-3"></i> Kigali,Rwanda Nyabihu</p>
+            <p><i class="mr-3"></i> nutrtious@example.com</p>
+            <p><i class="mr-3"></i> 0788456745</p>
+            <p><i class="mr-3"></i> + 2507789543</p>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-9 ">
+            <p class="text me-5"> Copyright &copy; 2024 All rights reserved <a href="#" style="text-decoration: none;">
+                <strong class="text-white">Nutritous</strong> </a> </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
