@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        .homepage {
+            background: url('Images/gettyimages-1306624593-612x612.jpg');
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 650px;
+        }
+
+        .card {
+            border-radius: 20px;
+        }
+
+        #navbar {
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .homepage {
+            margin-top: -5%;
+        }
+
+        #aboutt {
+            transform: translate(70px, 120px);
+            position: static;
+        }
+
+        #form {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <nav class="homepage" id="home">
+        <nav class="py-4" id="navbar">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-yellow-500 font-bold text-md ml-4 sm:ml-32">NUTRITIOUS</a>
+                <div class="block lg:hidden">
+                    <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-yellow-300 hover:border-yellow-300" id="nav-toggle">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 5h20v2H0V8zm0 5h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden lg:flex space-x-10 mr-4 sm:mr-40" id="nav-content">
+                    <li><a href="#home" class="text-yellow-300">Home</a></li>
+                    <li><a href="#form" class="text-white hover:text-yellow-300 register-link">Register</a></li>
+                    <li><a href="#do" class="text-white hover:text-yellow-300">Tips</a></li>
+                    <li><a href="#bal" class="text-white hover:text-yellow-300">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" id="aboutt">
+            <p class="max-w-lg p-4 text-white mt-28 ml-4 sm:ml-28 font-light text-xl">
+                <span class="font-bold text-yellow-500 text-3xl">BALANCED NUTRITION</span> <br>Mix the right amount of
+                nutrients, make life better.
+                Balance health and vitality, thrive every day. Fuel your body, nourish your soul, live your best life.
+            </p>
+            <button class="border border-yellow-500 bg-yellow-500 text-white rounded-lg px-10 py-2 hover:bg-yellow-800 hover:border-yellow-800 hover:text-white ml-4 sm:ml-32 mt-8">
+                More About Nutrition
+            </button>
+        </div>
+    </nav>
+
+    <section class="bg-gray-50 py-20 dark:bg-gray-900" id="do">
+        <h5 class="text-yellow-800 font-bold text-center">SOME CATEGORIES</h5>
+        <div class="container text-sm font-light text-center flex flex-col sm:flex-row max-w-4xl mt-6 mx-auto space-y-5 sm:space-y-0 sm:space-x-5">
+            <div class="p-4 border border-yellow-700 rounded hover:border-yellow-300">
+                <h5 class="text-yellow-800 font-medium hover:text-yellow-300">BODY BUILDING</h5>
+                <p class="text-white">Foods high in protein, such as chicken, fish, and legumes, support muscle growth
+                    and repair, essential for bodybuilding.</p>
+            </div>
+            <div class="p-4 border border-yellow-700 rounded hover:border-yellow-300">
+                <h5 class="text-yellow-800 font-medium hover:text-yellow-300">ENERGY GIVING</h5>
+                <p class="text-white">Carbohydrate-rich foods like whole grains, fruits, and sweet potatoes provide
+                    sustained energy for workouts and daily activities.</p>
+            </div>
+            <div class="p-4 border border-yellow-700 rounded hover:border-yellow-300">
+                <h5 class="text-yellow-800 font-medium hover:text-yellow-300">BODY PROTECTIVE</h5>
+                <p class="text-white">Antioxidant-rich foods such as berries, nuts, and green leafy vegetables help
+                    protect the body from oxidative stress and support overall health.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-900" id="bal">
+        <h1 class="text-center text-yellow-800 text-2xl">SOME COMPONENTS DESCRIPTION</h1>
+        <div>
+            <h2 class="text-center text-green-600 mt-12 mb-6 "> ENERGY GIVING FOOD</h2>
+            <div class="flex flex-wrap justify-center">
+                <img class="mr-1 mb-4" src="Images/potatoes.jpg" alt="" width="350px" style="border-radius: 30px;">
+                <img class="mr-1 mb-4" src="Images/yams.jpeg" alt="" width="350px" style="border-radius: 30px;">
+                <img class="mr-1 mb-4" src="Images/cassava.jpeg" alt="" width="350px" style="border-radius: 30px;">
+                <img class="mr-1 mb-4" src="images/images.jpeg" alt="" width="350px" style="border-radius: 30px;">
+            </div>
+        </div>
+        <div>
+            <h2 class="text-center text-green-600 mt-24 mb-12 ">BODY BUILDING FOOD</h2>
+            <div class="flex flex-wrap justify-center">
+                <img class="mr-1 mb-4" src="Images/chicken.jpg" alt="" width="300px" style="border-radius: 30px;">
+                <img class="mr-1 mb-4" src="Images/eggs.jpeg" alt="" width="300px" style="border-radius: 30px;">
+                <img class="mr-1 mb-4" src="Images/fish.jpeg" alt="" width="300px" style="border-radius: 30px;">
+                <img class="mr-1 mb-4" src="images/milk.jpeg" alt="" width="300px" style="border-radius: 30px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto flex flex-col sm:flex-row text-center bg-gray-900" id="about">
+        <div class="w-full sm:w-2/3 mt-16 sm:mt-32 ml-4 sm:ml-16">
+            <h1 class="text-center mt-4 text-2xl text-yellow-800">Did You Know?</h1>
+            <p class="text text-justify ml-4 sm:ml-36 mt-4 text-white">
+                Did you know that water is essential for our overall health and wellbeing? Water makes up about 60%
+                of our body weight, and drinking enough of it can provide a variety of benefits. Proper hydration
+                can boost metabolism, aid in weight management, and flush out toxins and bacteria from the body.
+                Dehydration, on the other hand, can lead to fatigue, headaches, and impaired cognitive function. The
+                recommended daily water intake is around <span class="text-yellow-600">11.5 cups</span> (2.7 liters)
+                for women and <span class="text-yellow-600">15.5 cups</span> (3.7 liters) for men. Staying
+                well-hydrated by drinking enough water throughout the day is an important part of maintaining a
+                healthy, balanced lifestyle.
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-20 dark:bg-gray-900" id="form">
+        <div class="container mx-auto text-center">
+            <h1 class="text-yellow-800 text-2xl font-semibold">CONTACT US</h1>
+            <div class="w-full bg-white mt-10 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-yellow-700 mx-auto">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1 class="text-xl font-semibold text-yellow-800 leading-tight tracking-tight md:text-2xl">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-yellow-800">Your
+                                email</label>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required>
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-yellow-800">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" required>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-yellow-300 rounded bg-yellow-800 focus:ring-3 focus:ring-primary-300 dark:bg-yellow-700 dark:border-gray-600">
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="remember" class="text-gray-500 dark:text-yellow-800">Remember me</label>
+                                </div>
+                            </div>
+                            <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-yellow-500">Forgot
+                                password?</a>
+                        </div>
+                        <button type="submit" class="w-full text-yellow-800 bg-gray-600 px-9 py-2 border-gray-800 rounded">Sign
+                            in</button>
+                        <p class="text-sm font-light text-yellow-500 dark:text-yellow-800">
+                            Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-yellow-400">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 Nutritious. All rights reserved.</p>
+            <p class="text-sm">Follow us on
+                <a href="#" class="text-yellow-500 hover:text-yellow-300">Facebook</a>,
+                <a href="#" class="text-yellow-500 hover:text-yellow-300">Twitter</a>,
+                <a href="#" class="text-yellow-500 hover:text-yellow-300">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navContent = document.getElementById('nav-content');
+        const registerLink = document.querySelector('.register-link');
+        const formSection = document.getElementById('form');
+
+        navToggle.addEventListener('click', () => {
+            navContent.classList.toggle('hidden');
+        });
+
+        registerLink.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default anchor behavior
+            formSection.style.display = 'block'; // Show the form section
+            formSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the form section
+        });
+    </script>
+</body>
+
+</html>
